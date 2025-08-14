@@ -1,4 +1,10 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  output: 'export',          // Needed for static export
+  basePath: '/nurse-course',  // GitHub repo name
+  images: {
+    unoptimized: true,       // For static export
+  },
+}
 
-export default nextConfig;
+module.exports = nextConfig;
