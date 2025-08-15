@@ -1,53 +1,64 @@
-h1,h2,h3,h4,p,a,ul,li {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+/* Global Styles */
+h1, h2, h3, h4, p, a, ul, li {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    text-decoration: none;  
-}
-
-body {
-    margin: 0;
-    font-family: sans-serif;
-    background: linear-gradient(135deg, var(--color-light-blue-bg), #a0d8f1);
-    position: relative;
-    overflow-x: hidden; /* keep horizontal scroll hidden */
-}
-
-/* Decorative shapes applied globally using body pseudo-elements */
-body::before {
-    content: '';
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    background: var(--color-accent);
-    border-radius: 50%;
-    opacity: 0.1;
-    top: 10%;
-    left: -50px;
-    transform: rotate(45deg);
-    z-index: -1;
-}
-
-body::after {
-    content: '';
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    background: var(--color-accent);
-    border-radius: 50%;
-    opacity: 0.08;
-    bottom: -100px;
-    right: -100px;
-    transform: rotate(-30deg);
-    z-index: -1;
+  text-decoration: none;
 }
 
 html, body {
-    height: 100%;
-    overflow-y: auto; /* default scroll if needed */
+  margin: 0;
+  padding: 0;
+  height: 100%;         /* make html and body fill viewport */
+  font-family: sans-serif;
+  background: linear-gradient(135deg, var(--color-light-blue-bg), #a0d8f1);
+  overflow-x: hidden;    /* prevent horizontal scroll */
 }
 
 body {
-    overflow-anchor: none; /* prevents "extra" scroll from flex layouts */
+  min-height: 100%;
+  overflow-y: auto;
+  position: relative;
+  overflow-anchor: none; /* prevents "extra" scroll from flex layouts */
+}
+
+/* Decorative shapes applied globally */
+body::before,
+body::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.1;
+  pointer-events: none; /* prevent shapes from blocking touch/scroll */
+  z-index: -1;
+}
+
+body::before {
+  width: 200px;
+  height: 200px;
+  background: var(--color-accent);
+  top: 10%;
+  left: -50px;
+  transform: rotate(45deg);
+}
+
+body::after {
+  width: 300px;
+  height: 300px;
+  background: var(--color-accent);
+  bottom: 0;            /* changed from -100px */
+  right: 0;             /* changed from -100px */
+  transform: rotate(-30deg);
+}
+
+h1, h2, h3 {
+  color: var(--color-primary);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+p {
+  color: var(--color-text);
 }

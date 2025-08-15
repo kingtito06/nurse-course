@@ -1,4 +1,3 @@
-import "./styles/global.css";
 import "./styles/hero.css"
 export default function Home() {
   return (

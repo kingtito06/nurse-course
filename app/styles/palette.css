@@ -1,6 +1,7 @@
 :root { 
  --color-primary: rgb(29,64,164); /*Headers, nav*/
  --color-accent: rgb(21,184,166); /*buttons, links,*/
+ --color-accent-hover:rgb(27, 158, 143);
  --color-light-blue-bg: rgb(219,233,254); /*Important Info bg*/
  --color-bg: rgb(249,250,251); /*Card bg*/
  --color-text: rgb(55,65,81);

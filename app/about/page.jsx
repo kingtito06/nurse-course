@@ -1,4 +1,4 @@
-import "../styles/global.css";
+"use client"
 import "../styles/hero.css";
 import "../styles/about.css";
 

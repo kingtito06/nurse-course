@@ -1,4 +1,4 @@
-import "../styles/global.css";
+"use client"
 import "../styles/hero.css";
 import "../styles/pricing.css";
 
@@ -17,6 +17,8 @@ export default function Pricing () {
                   Start Free Course
                 </a>
            </section>
+
+           <div className="pricing-wrapper">
 
            <section className="course1">
             <div className="glass-card">
@@ -75,6 +77,8 @@ export default function Pricing () {
 
 
            </section>
+
+        </div>
 
             </main>
         </div>
