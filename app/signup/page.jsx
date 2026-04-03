@@ -1,8 +1,10 @@
 "use client";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import "../styles/auth.css";
 import { supabase } from "@/lib/supabaseClient";
 import { useRouter } from "next/navigation";
+import { initializeUserCourseAccess } from "@/lib/courseAccess";
 
 export default function AuthPage() {
   const router = useRouter();
@@ -37,9 +39,16 @@ export default function AuthPage() {
 
     if (isLogin) {
       // LOGIN
-      const { error } = await supabase.auth.signInWithPassword({ email, password });
-      if (error) setError(error.message);
-      else router.push("/dashboard");
+      const { data, error } = await supabase.auth.signInWithPassword({ email, password });
+      if (error) {
+        setError(error.message);
+      } else {
+        // Initialize course access for new users if not already done
+        if (data.user) {
+          await initializeUserCourseAccess(data.user.id);
+        }
+        router.push("/dashboard");
+      }
     } else {
       // REGISTER
       const { error } = await supabase.auth.signUp({ email, password });
@@ -106,6 +115,7 @@ export default function AuthPage() {
             <button type="submit">Login</button>
           </form>
           <p onClick={() => setIsLogin(false)}>Don't have an account?</p>
+          <p><Link href="/forgot-password" style={{ color: 'var(--color-accent)', textDecoration: 'underline' }}>Forgot password?</Link></p>
         </div>
       </div>
     </div>

@@ -1,8 +1,40 @@
 "use client"
+import { useRouter } from "next/navigation";
+import { supabase } from "@/lib/supabaseClient";
+import { grantCourseAccess, hasCourseAccess, COURSES } from "@/lib/courseAccess";
 import "../styles/hero.css";
 import "../styles/pricing.css";
 
 export default function Pricing () {
+    const router = useRouter();
+
+    const handleStartFreeCourse = async (courseId) => {
+        const { data: { user } } = await supabase.auth.getUser();
+
+        if (user) {
+            // Check if user already has access to this course
+            const alreadyHasAccess = await hasCourseAccess(courseId);
+            
+            if (alreadyHasAccess) {
+                // User already has access, redirect to dashboard
+                router.push("/dashboard");
+                return;
+            }
+
+            // User doesn't have access, grant it
+            const success = await grantCourseAccess(courseId);
+            if (success) {
+                // Redirect to the course or dashboard
+                router.push("/dashboard");
+            } else {
+                alert("There was an error granting course access. Please try again.");
+            }
+        } else {
+            // User is not signed in, redirect to signup
+            router.push("/signup");
+        }
+    };
+
     return (
         <div>
             <main>
@@ -13,9 +45,9 @@ export default function Pricing () {
                 <p>
                   Get started for free, then unlock advanced training at your own pace.
                 </p>
-                <a>
+                <button onClick={() => handleStartFreeCourse(COURSES.AUTONOMOUS_NP)}>
                   Start Free Course
-                </a>
+                </button>
            </section>
 
            <div className="pricing-wrapper">
@@ -28,9 +60,9 @@ export default function Pricing () {
                 <p>
                     Learn the foundational steps to becoming an autonomous nurse practitioner, including licensing, legal requirements, and patient care strategies.
                 </p>
-                <a>
+                <button onClick={() => handleStartFreeCourse(COURSES.AUTONOMOUS_NP)}>
                     Start for Free
-                </a>
+                </button>
             </div>
 
            </section>
