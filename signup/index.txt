@@ -1,22 +1,25 @@
 1:"$Sreact.fragment"
-2:I[4579,["192","static/chunks/192-afaffcf9d77d93cb.js","177","static/chunks/app/layout-82df265e6be1858d.js"],"default"]
+2:I[4579,["354","static/chunks/354-ff3eaad177a9ee0d.js","874","static/chunks/874-437a265a67d6cfee.js","177","static/chunks/app/layout-9ccd3acee138315f.js"],"default"]
 3:I[7555,[],""]
 4:I[1295,[],""]
-5:I[894,[],"ClientPageRoot"]
-6:I[7716,["192","static/chunks/192-afaffcf9d77d93cb.js","879","static/chunks/app/signup/page-1a20fa6bb5419289.js"],"default"]
-9:I[9665,[],"OutletBoundary"]
-b:I[4911,[],"AsyncMetadataOutlet"]
-d:I[9665,[],"ViewportBoundary"]
-f:I[9665,[],"MetadataBoundary"]
-10:"$Sreact.suspense"
-12:I[8393,[],""]
-:HL["/nurse-course/_next/static/css/62e8c7c152fdc51e.css","style"]
-:HL["/nurse-course/_next/static/css/becf83518a46d354.css","style"]
-0:{"P":null,"b":"d24d1dVyxUiLXUIoPg5jK","p":"/nurse-course","c":["","signup",""],"i":false,"f":[[["",{"children":["signup",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/nurse-course/_next/static/css/62e8c7c152fdc51e.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"children":[["$","$L2",null,{}],["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]}]]}],{"children":["signup",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","$L5",null,{"Component":"$6","searchParams":{},"params":{},"promises":["$@7","$@8"]}],[["$","link","0",{"rel":"stylesheet","href":"/nurse-course/_next/static/css/becf83518a46d354.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L9",null,{"children":["$La",["$","$Lb",null,{"promise":"$@c"}]]}]]}],{},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$Ld",null,{"children":"$Le"}],null],["$","$Lf",null,{"children":["$","div",null,{"hidden":true,"children":["$","$10",null,{"fallback":null,"children":"$L11"}]}]}]]}],false]],"m":"$undefined","G":["$12",[]],"s":false,"S":true}
-7:{}
-8:"$0:f:0:1:2:children:2:children:1:props:children:0:props:params"
-e:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
-a:null
-13:I[8175,[],"IconMark"]
-c:{"metadata":[["$","link","0",{"rel":"icon","href":"/nurse-course/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","$L13","1",{}]],"error":null,"digest":"$undefined"}
-11:"$c:metadata"
+5:I[3754,["345","static/chunks/app/not-found-589bfb428619c08a.js"],"default"]
+6:I[4712,["354","static/chunks/354-ff3eaad177a9ee0d.js","874","static/chunks/874-437a265a67d6cfee.js","177","static/chunks/app/layout-9ccd3acee138315f.js"],"default"]
+7:I[894,[],"ClientPageRoot"]
+8:I[7716,["354","static/chunks/354-ff3eaad177a9ee0d.js","874","static/chunks/874-437a265a67d6cfee.js","879","static/chunks/app/signup/page-5b21fe881af23625.js"],"default"]
+b:I[9665,[],"OutletBoundary"]
+d:I[4911,[],"AsyncMetadataOutlet"]
+f:I[9665,[],"ViewportBoundary"]
+11:I[9665,[],"MetadataBoundary"]
+12:"$Sreact.suspense"
+14:I[8393,[],""]
+:HL["/nurse-course/_next/static/css/8522ce3edf1b95ad.css","style"]
+:HL["/nurse-course/_next/static/css/030a19155d0e63f0.css","style"]
+:HL["/nurse-course/_next/static/css/3d02dfe0f0bc1326.css","style"]
+0:{"P":null,"b":"T1i6hy5cApEmzZICRGSOJ","p":"/nurse-course","c":["","signup",""],"i":false,"f":[[["",{"children":["signup",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/nurse-course/_next/static/css/8522ce3edf1b95ad.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/nurse-course/_next/static/css/030a19155d0e63f0.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","meta",null,{"charSet":"UTF-8"}],["$","meta",null,{"name":"viewport","content":"width=device-width, initial-scale=1.0"}],["$","meta",null,{"name":"theme-color","content":"#1d40a4"}]]}],["$","body",null,{"children":[["$","$L2",null,{}],["$","main",null,{"role":"main","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","$L5",null,{}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","$L6",null,{}]]}]]}]]}],{"children":["signup",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","$L7",null,{"Component":"$8","searchParams":{},"params":{},"promises":["$@9","$@a"]}],[["$","link","0",{"rel":"stylesheet","href":"/nurse-course/_next/static/css/3d02dfe0f0bc1326.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$Lb",null,{"children":["$Lc",["$","$Ld",null,{"promise":"$@e"}]]}]]}],{},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$Lf",null,{"children":"$L10"}],null],["$","$L11",null,{"children":["$","div",null,{"hidden":true,"children":["$","$12",null,{"fallback":null,"children":"$L13"}]}]}]]}],false]],"m":"$undefined","G":["$14",[]],"s":false,"S":true}
+9:{}
+a:"$0:f:0:1:2:children:2:children:1:props:children:0:props:params"
+10:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+c:null
+15:I[8175,[],"IconMark"]
+e:{"metadata":[["$","title","0",{"children":"Nurse Course Platform"}],["$","meta","1",{"name":"description","content":"Comprehensive course platform for nurses to become autonomous nurse practitioners with structured lessons, quizzes, and certifications."}],["$","meta","2",{"name":"keywords","content":"nurse practitioner, autonomous NP, nursing education, healthcare training"}],["$","link","3",{"rel":"icon","href":"/nurse-course/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","$L15","4",{}]],"error":null,"digest":"$undefined"}
+13:"$e:metadata"
